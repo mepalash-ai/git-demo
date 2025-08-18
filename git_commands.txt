@@ -1,3 +1,5 @@
+From remote to local repository:
+---------------------------------
 git clone (to clone from remote repository to local)
 git status (to check the status)
 git add <file_name> (for adding the file to stage)
@@ -5,6 +7,50 @@ git add . (for adding all new/modified files to stage)
 git commit -m "write some comment mentioning the change in this version"
 git push origin main
 
+How to add local repository to remote?
+---------------------------------------
+git init (to initiate git in a local folder/directory)
+git remote add origin <link>
+git remote -v (to verify remote)
+git push -u origin main (-u will create short cut so that from next time onward we can use only git push)
+
+Branch commands
+----------------
+git branch (to check branch)
+git branch -M main (to rename branch)
+git checkout <to branch name> (to navigate to other branch<to branch name> from current branch)
+git checkout -b <new_branch_name> (to create new branch)
+git checkout -d <branch_name> (to delete a branch. One thing to note, we can't delete current branch, means if you are in feature2 branch
+and wants to delte feature2 branch, you can not. You need to checkout to other branch and then delete feature2 branch)
+
+Marging commands
+-----------------
+git diff <branch_name> (to compare differences between current branch and branch_name)
+git merge <branch_name> (to merge 2 branches)
+git pull origin main 
+
+Undoing changes:
+-----------------
+case 1: after add step
+git reset <file_name> (to restore to previous version of <file_name>)
+git reset (to restore all the files to previous version)
+
+case 2: after commit
+git reset HEAD~1 (restore to previous version)
+git log (to display commit log)
+
+case 3: after commit to certain version
+git reset <hash_commit> (here <hash> is the version hash number)
+git reset --hard <hash_commit> (it will reset the local vs code verion too)
+
+Fork:
+-------
+using fork, we can copy the project, then we can make our chages and try to pull it again to the original project.
+basically fork is a rough copy.
+
+
+How to change/set gloabl parameters?
+-------------------------------------
 Run the
 following command and follow the instructions in your editor to edit
 your configuration file:
