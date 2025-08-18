@@ -3,3 +3,14 @@ git status (to check the status)
 git add <file_name> (for adding the file to stage)
 git add . (for adding all new/modified files to stage)
 git commit -m "write some comment mentioning the change in this version"
+git push origin main
+
+Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
