@@ -1,0 +1,5 @@
+git clone (to clone from remote repository to local)
+git status (to check the status)
+git add <file_name> (for adding the file to stage)
+git add . (for adding all new/modified files to stage)
+git commit -m "write some comment mentioning the change in this version"
