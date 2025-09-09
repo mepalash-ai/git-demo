@@ -1,6 +1,7 @@
 From remote to local repository:
 ---------------------------------
-git clone (to clone from remote repository to local)
+git clone (to clone from remote repository to local) - we use it when we are pulling for first time
+git pull ( from next time onward, we use pull)
 git status (to check the status)
 git add <file_name> (for adding the file to stage)
 git add . (for adding all new/modified files to stage)
